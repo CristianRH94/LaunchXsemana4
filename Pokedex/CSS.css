@@ -1,0 +1,485 @@
+
+body {
+    font-family: 'Roboto Mono', monospace, !important;
+}
+
+.encabezadonavbar {
+    max-width: 20px;
+    max-height: 10px;
+
+}
+
+@media all {
+
+    .pokemon {
+        
+        height: 100%;
+        width: auto;
+        border-radius: 5px;
+        background-position: center;
+    }
+
+    form {
+        width: 200px;
+        margin: 20px auto;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .poke-card {
+        position: relative;
+        height: 200px;
+        font-family: 'Roboto Mono', monospace, !important;
+        max-width: 200px;
+        border-radius: 5px;
+        color: #000;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .poke-card::before {
+        content: '';
+        background-size: 3px 3px;
+        border-radius: 4px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: -1;
+    }
+
+    .img-container {
+        position: relative;
+        width: 180px;
+        
+    }
+
+    .poke-stats div {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .poke-types div {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 4px;
+        border: 1px dashed black;
+    }
+
+    .poke-img {
+        width: 180px;
+        
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+	div#pokedex
+	{
+		width: 750px;
+		margin: 5px auto 0 auto;
+	}
+
+	div#left
+	{
+		width: 400px;
+		height: 500px;
+		float: left;
+		position: relative;
+		z-index: 1;
+	}
+
+	div#right
+	{
+		width: 350px;
+		height: 500px;
+		float: left;
+		position: relative;
+	}
+
+
+
+	/* ////  izquierda //// */
+
+	div#curve1_left
+	{
+		width: 201px;
+		height: 85px;
+		background-color: #8b0000;
+		float: left;
+		padding: 15px 0 0 15px;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		box-shadow: -10px 9px #5e0000;
+		-webkit-box-shadow: -10px 9px #5e0000;
+		-moz-box-shadow: -10px 9px #5e0000;
+		-o-box-shadow: -10px 9px #5e0000;
+
+		border-bottom-right-radius: 85px 60px;
+		-webkit-border-bottom-right-radius: 85px 60px;
+		-moz-border-bottom-right-radius: 85px 60px;
+		-o-border-bottom-right-radius: 85px 60px;
+
+		border-top-left-radius: 30px;
+		-webkit-border-top-left-radius: 30px;
+		-moz-border-top-left-radius: 30px;
+		-o-border-top-left-radius: 30px;
+	}
+
+
+	div#bg_curve1_left
+	{
+		width: 400px;
+		height: 80px;
+		background-color: #8b0000;
+
+		border-top-left-radius: 30px;
+		-webkit-border-top-left-radius: 30px;
+		-moz-border-top-left-radius: 30px;
+		-o-border-top-left-radius: 30px;
+	}
+
+	div#curve2_left
+	{
+		width: 216px;
+		height: 451px;
+		background-color: #c00d0d;
+		float: right;
+
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		border-top-left-radius:85px 60px;
+		-webkit-border-top-left-radius: 85px 60px;
+		-moz-border-top-left-radius: 85px 60px;
+		-o-border-top-left-radius: 85px 60px;
+	}
+
+	div#bg_curve2_left
+	{
+		width: 400px;
+		height: 420px;
+		background-color: #c00d0d;
+
+		box-shadow: -10px 9px #5e0000;
+		-webkit-box-shadow: -10px 9px #5e0000;
+		-moz-box-shadow: -10px 9px #5e0000;
+		-o-box-shadow: -10px 9px #5e0000;
+
+		border-bottom-left-radius: 30px;
+		-webkit-border-bottom-left-radius: 30px;
+		-moz-border-bottom-left-radius: 30px;
+		-o-border-bottom-left-radius: 30px;
+	}
+
+	div#buttonGlass
+	{
+		width: 60px;
+		height: 60px;
+		margin-right: 15px;
+		border: 5px solid #fff;
+		float: left;
+
+		box-shadow: 0 0 10px #490000;
+		-webkit-box-shadow: 0 0 10px #490000;
+		-moz-box-shadow: 0 0 10px #490000;
+		-o-box-shadow: 0 0 10px #490000;
+		
+		background: radial-gradient(#05fbfb, #29abe3);
+		background: -webkit-radial-gradient(#05fbfb, #29abe3);
+		background: -moz-radial-gradient(#05fbfb, #29abe3);
+		background: -o-radial-gradient(#05fbfb, #29abe3);
+		
+		border-radius: 35px;
+		-webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+	   	-o-border-radius: 35px;
+	}
+
+
+	div#junction
+	{
+		width: 60px;
+		height: 451px;
+		float: right;
+		
+		background: linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);	
+		background: -webkit-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+		background: -moz-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+		background: -o-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+	}
+
+	div#junction1
+	{
+		height: 40px;
+		background-color: #5e0000;
+		opacity: 0.3;
+		margin-top: 50px;
+		margin-bottom: 262px;
+
+		border-top: 2px solid #330000;
+		border-bottom: 2px solid #330000;
+	}
+
+	div#junction2
+	{
+		height: 40px;
+		background-color: #5e0000;
+		opacity: 0.3;
+
+		border-top: 2px solid #330000;
+		border-bottom: 2px solid #330000;
+	}
+
+	div#screen
+	{
+		height: 350px;
+		width: 260px;
+		padding: 0 20px;
+		background-color: #b0b0b0;
+		float:left;
+
+		position: absolute;
+		top: 130px;
+		left: 19px;
+
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-o-border-radius: 15px;
+	}
+
+	div#screen:after
+	{
+		content: "";
+		border-top: 40px solid #b0b0b0;
+		border-left: 40px solid #c00d0d;
+		height: 0;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	div#picture
+	{
+		height: 300px;
+		width: 230px;
+		margin-top: 20px;
+		margin-bottom: 9px;
+		background-color: rgb(6, 61, 15);
+		border: 3px solid #494949;
+		clear: both;
+
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-o-border-radius: 15px;
+	}
+
+	div#picture img
+	{
+		display: block;
+		margin: 0 auto;
+	}
+
+	div#topPicture
+	{
+		margin: 6px auto;
+		width: 40px;
+	}
+
+	
+
+	/* //// DERECHA //// */
+
+	div#curve1_right
+	{
+		width: 166px;
+		height: 451px;
+		background-color: #c00d0d;
+		float: right;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		border-top-right-radius:85px 60px;
+		-webkit-border-right-left-radius: 85px 60px;
+		-moz-border-right-left-radius: 85px 60px;
+		-o-border-right-left-radius: 85px 60px;
+	}
+
+
+	div#bg_curve1_right
+	{
+		width: 350px;
+		height: 80px;
+		background-color: #fff;
+
+		border-top-right-radius: 30px;
+		-webkit-border-top-right-radius: 30px;
+		-moz-border-top-right-radius: 30px;
+		-o-border-top-right-radius: 30px;
+	}
+
+	div#curve2_right
+	{
+		width: 216px;
+		height: 100px;
+		background-color: #fff;
+		float: left;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		border-bottom-left-radius: 85px 60px;
+		-webkit-border-bottom-left-radius: 85px 60px;
+		-moz-border-bottom-left-radius: 85px 60px;
+		-o-border-bottom-left-radius: 85px 60px;
+	}
+
+	div#bg_curve2_right
+	{
+		width: 350px;
+		height: 420px;
+		background-color: #c00d0d;
+
+		border-bottom-right-radius: 30px;
+		-webkit-border-bottom-right-radius: 30px;
+		-moz-border-bottom-right-radius: 30px;
+		-o-border-bottom-right-radius: 30px;
+
+		box-shadow: -10px 9px #5e0000;
+		-webkit-box-shadow: -10px 9px #5e0000;
+		-moz-box-shadow: -10px 9px #5e0000;
+		-o-box-shadow: -10px 9px #5e0000;
+	}
+
+	div#stats
+	{
+		height: 350px;
+		width: 280px;
+		padding: 10px;
+		background-color: #30da0c;
+		z-index: 1;
+		font-size: 13px;
+		font-family: 'Roboto Mono', monospace, !important;
+
+		position: absolute;
+		top: 130px;
+		left: 25px;
+
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-o-border-radius: 15px;
+
+		box-shadow: 0 0 20px #003300 inset;
+		-webkit-box-shadow: 0 0 20px #003300 inset;
+		-moz-box-shadow: 0 0 20px #003300 inset;
+		-o-box-shadow: 0 0 20px #003300 inset;
+	}
+
+	
+}
+
+@media handheld and (orientation:portrait), (max-width:768px) {
+
+	div#pokedex
+	{
+		width: 400px;
+	}
+
+	div#logo
+	{
+		width: 281px;
+		height: 99px;
+		background: url('./assets/pngegg.png') no-repeat left top;
+		z-index: 1;
+
+		position: absolute;
+		top: 220px;
+		left: 30px;
+	}
+
+	div#left
+	{
+		width: 400px;
+		height: 500px;
+		float: left;
+		position: relative;
+		z-index: 1;
+		margin: 0 auto;
+	}
+
+	div#curve1_left
+	{
+		width: 201px;
+		height: 85px;
+		background-color: #8b0000;
+		float: left;
+		padding: 15px 0 0 15px;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		box-shadow: 0 0 #5e0000;
+		-webkit-box-shadow: 0 0 #5e0000;
+		-moz-box-shadow: 0 0 #5e0000;
+		-o-box-shadow: 0 0 #5e0000;
+
+		border-bottom-right-radius: 85px 60px;
+		-webkit-border-bottom-right-radius: 85px 60px;
+		-moz-border-bottom-right-radius: 85px 60px;
+		-o-border-bottom-right-radius: 85px 60px;
+
+		border-top-left-radius: 30px;
+		-webkit-border-top-left-radius: 30px;
+		-moz-border-top-left-radius: 30px;
+		-o-border-top-left-radius: 30px;
+	}
+
+	div#bg_curve1_left
+	{
+		width: 400px;
+		height: 80px;
+		background-color: #8b0000;
+
+		box-shadow: -10px 9px #5e0000;
+		-webkit-box-shadow: -10px 9px #5e0000;
+		-moz-box-shadow: -10px 9px #5e0000;
+		-o-box-shadow: -10px 9px #5e0000;
+
+		border-top-left-radius: 30px;
+		-webkit-border-top-left-radius: 30px;
+		-moz-border-top-left-radius: 30px;
+		-o-border-top-left-radius: 30px;
+	}
+
+	div#right, div#screen, div#bigbluebutton, div#barbutton1, div#barbutton2, div#cross
+	{
+		display: none;
+	}
+
+}
+
+footer {
+	background-color: #000;
+}
